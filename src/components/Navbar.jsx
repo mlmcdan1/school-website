@@ -5,16 +5,13 @@ const Navbar = () => {
   return (
     <>
       <nav className='bg-white text-green-950 px-6 py-4 flex items-center justify-between'>
-        <div className='text-2xl font-bold'>
+        <div className='flex items-center gap-4'>
           <Link to="/">
             {/* Insert Logo Here */}
             <img
             src={unityLogo}
             className='w-14 h-12'
             alt='Unity Christian Academy Logo'/>
-            <p>
-              Unity Christian Academy
-            </p>
           </Link>
         </div>
         <ul className='flex space-x-4'>

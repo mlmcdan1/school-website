@@ -2,6 +2,7 @@ import './App.css';
 import './index.css';
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from './pages/Home/Home';
 import Athletics from './pages/Athletics/Athletics';
 import About from './pages/About/About';
@@ -30,6 +31,7 @@ function App() {
           <Route path="/lunch-menu" element={<LunchMenu/>}/>
           <Route path="/student-life" element={<StudentLife/>}/>
         </Routes>
+        <Footer/>
       </Router>
     </>
   );

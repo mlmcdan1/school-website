@@ -1,5 +1,9 @@
-import React from 'react'
-import bible from '../../assets/videos/Bible.mp4'
+import React from 'react';
+import bible from '../../assets/videos/Bible.mp4';
+import VerseOfTheDay from '../../components/VerseOfTheDay';
+import InfoSection from '../../components/InfoSection';
+import UpcomingEvents from '../../components/UpcomingEvents';
+
 function Home() {
   return (
     <main className='bg-white min-h-[600px]'>
@@ -33,45 +37,13 @@ function Home() {
         </div>
 
         {/* About Section */}
-        <section className='py-16 px-6'>
-          <h2 className='text-3xl font-bold text-center mb-8'>
-            About Us
-          </h2>
-          <p className='text-center max-w-2xl mx-auto text-gray-700'>
-            Unity Christian Academy's mission is to partner with Christian parents<br/>
-            in the process of preparing their children to impact the world for Jesus Christ<br/>
-            pursuing their God-given potential in academics, leadership, and service.
-          </p>
-        </section>
+        <InfoSection/>
 
-        {/* Academics */}
-        <section className='bg-white py-16 px-6'>
-          <h2 className='text-3xl font-bold text-center mb-8'>
-            Academics
-          </h2>
-          <div className='grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto'>
-            <div className='bg-gray-100 p-6 rounded shadow'>
-              <h3 className='text-xl font-bold mb-2'>Elementary</h3>
-              <p className='text-gray-700'>Building foundational skills and nurturing creativity.</p>
-            </div>
-            <div className='bg-gray-100 p-6 rounded shadow'>
-              <h3 className='text-xl font-bold mb-2'>
-                Middle School
-              </h3>
-              <p className='text-gray-700'>
-                Encouraging critical thinking and academic exploration. 
-              </p>
-            </div>
-            <div className='bg-gray-100 p-6 rounded shadow'>
-              <h3 className='text-xl font-bold mb-2'>
-                High School
-              </h3>
-              <p className='text-gray-700'>
-                Preparing students for college and lifelong success. 
-              </p>
-            </div>
-          </div>
-        </section>
+        {/* Verse of the Day */}
+        <VerseOfTheDay/>
+
+        {/* Upcoming Events */}
+        <UpcomingEvents/>
 
         {/* Donate */}
         <section className='bg-green-900 text-white py-16 px-4 text-center'>
